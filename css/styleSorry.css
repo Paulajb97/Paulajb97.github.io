@@ -1,0 +1,59 @@
+
+html, body{
+
+	background-color: rgb(31, 31, 31);
+
+	/*height: 100%;*/
+
+}
+
+
+
+
+#sorryMessage{
+
+    padding-top: 30px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin: auto;
+    width: 50%;
+
+    place-content: center;
+    align-items: center;
+
+}
+
+#sorryImg{
+
+    width: 100px;
+    height: 100px;
+    /*height: 120px;*/
+
+    background-image: url("../media/LogoCara.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#sorryText{
+
+    margin-left: 20px;
+    margin-top: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    color: white;
+    text-align: center;
+    font-size: 3em;
+
+}
+
+
+
+
+

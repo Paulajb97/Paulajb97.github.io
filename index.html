@@ -7,19 +7,282 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="">
 </head>
 
+
+<header>
+
+    <a id="logo" href="https://www.linkedin.com/in/paula-jiménez-benito-927025151/"></a>
+    <div id="topName">Paula Jiménez Benito</div>
+
+</header>
+
+
 <body>
 
-    <div id="sorryMessage">
+    <!-- MYSELF -->
+    <div id="boxMyself">
 
-        <div id="sorryImg"></div>
+        <div class="box">
 
-        <div id="sorryText">
-            <div>Today is a great day!!</div>
-            <div>But no for this page...</div>
-            <div>I'm working on it</div>
+            <div class="title">¿Quién soy?</div>
+
+            <div class="paragraph">
+                Graduada en Diseño y Desarrollo de Videojuegos, soy programadora 
+                de videojuegos, aunque no me limito sólo a eso. ¿Qué quiere decir 
+                ésto? Que puedo hacer que un personaje se mueva al antojo de un 
+                jugador, hacer una web, aplicaciones o incluso crear herramientas 
+                para hacer la vida más fácil a otros desarrolladores.
+            </div>
+            <div class="paragraph">
+                Por otra parte, también soy desarrolladora de audio para videojuegos. Aunque 
+                en este mundo todavía me queda camino por delante.
+            </div>
+
+        </div>
+
+        <div class="box">
+
+            <div class="title en">Who am I?</div>
+            <div class="paragraph en">
+                    Graduated in Videogame Design and Development, I am a videogame 
+                    programmer, although I do not limit myself to that. What does this mean? 
+                    That I can make a character move at the whim of a player, make a web, 
+                    applications or even create tools to make life easier for other developers.
+            </div>
+            <div class="paragraph en">
+                    On the other hand, I am also an audio developer for videogames. 
+                    Although in this world I still have a way ahead.
+            </div>
+
         </div>
 
     </div>
+    
+    
+    <!-- CONTENT -->
+    <div class="boxContent">
+
+        <div class="title">Mis proyectos</div>
+
+        <!-- DATA LOADER -->
+        <div class="singleContent">
+            <div class="content">
+                <div class="title2">DataLoader</div>
+                <div class="description">Unity - C# + C++ + Bases de datos</div>
+                <div class="paragraph">
+                    DataLoader es una herramienta para Unity, y para un futuro Unreal,
+                    que guarda configuraciones tanto en una base de datos local como
+                    en un xml, a elección  del usuario. Estas configuraciones se pueden 
+                    establecer en cualquier actor que tenga el recipiente adecuado. En 
+                    este caso, el recipiente es una variable del tipo DatabaseRow.
+                </div>
+            </div>
+            <div class="sliderContainer content">
+                <div class="backgroundSliderContainer4">
+                    <div class="sliderImg" style="background-image: url(media/DataLoader/Database.webp)"></div>
+                    <div class="sliderImg" style="background-image: url(media/DataLoader/Database2.webp)"></div>
+                    <div class="sliderImg" style="background-image: url(media/DataLoader/Xml.webp)"></div>
+                    <div class="sliderImg" style="background-image: url(media/DataLoader/Xml2.webp)"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- IA -->
+        <div>
+            <div class="title2">IA</div>
+            <div class="description">Unity - IA + C#</div>
+
+            <!-- NEGAMAX AB -->
+            <!-- <div class="singleContent">
+                <div class="content">
+                    <div class="title3">NegaMax AB</div>
+                    <div class="paragraph">
+                        IA para damas chinas con el algoritmo negamax con poda alfa-beta
+                    </div>
+                </div>
+                <div class="imgContent content" id="negamaxImg"></div>
+            </div> -->
+
+            <!-- HILL CLIMBING -->
+            <div class="singleContent">
+                <div class="content">
+                    <div class="title3">Hill climbing</div>
+                    <div class="paragraph">
+                        IA que aprende a tirar a canasta usando de base 
+                        el algoritmo de Hill Climbing
+                    </div>
+                </div>
+                <div class="imgContent content" id="hillImg"></div>
+            </div>
+
+            <!-- GENETIC ALGORITHM -->
+            <div class="singleContent">
+                <div class="content">
+                    <div class="title3">Algoritmo genético</div>
+                    <div class="paragraph">
+                        Actores que evolucionan para poder escapar con mayor eficacia 
+                        del jugador
+                    </div>
+                </div>
+                <div class="imgContent content" id="genImg"></div>
+            </div>
+
+            <!-- NEURAL NETWORK -->
+            <div class="singleContent">
+                <div class="content">
+                    <div class="title3">Doodle guesser</div>
+                    <div class="paragraph">
+                        IA que reconoce dibujos gracias a una red neuronal
+                    </div>
+                </div>
+                <div class="imgContent content" id="neuralImg"></div>
+            </div>
+        </div>
+
+        <!-- COPY THE PATRON -->
+        <div class="singleContent">
+            <div class="content">
+                <div class="title2">Copy the patron</div>
+                <div class="description">Js + C++</div>
+                <div class="paragraph">
+                    Juego realizado en JavaScript y C++ en el que tienes que 
+                    reprocudir el patrón de ejemplo pulsando las casillas correctas 
+                    y colocando casillas extra en el caso de que te las proporcionen
+                </div>
+            </div>
+            <div class="imgContent content" id="copyImg">
+                <!-- <img src="media/CopyPatron/playweb.gif" alt=""> -->
+            </div>
+        </div>
+
+        <!-- 3DMAX TOOLS -->
+        <div>
+            <div class="title2">Herramientas para 3D Max</div>
+            <div class="description">3D Max - MaxScript</div>
+
+            <!-- SOFA GENERATOR -->
+            <div class="singleContent">
+                <div class="content">
+                    <div class="title3">Generador de sofás</div>
+                    <div class="paragraph">
+                        Herramienta que modela sofás en base a los datos 
+                        que le introduce el usuario
+                    </div>
+                </div>
+                <div class="sliderContainer content">
+                        <div class="backgroundSliderContainer3">
+                            <div class="sliderImg" style="background-image: url(media/3DMax/Sofa/Sofa1.webp)"></div>
+                            <div class="sliderImg" style="background-image: url(media/3DMax/Sofa/Sofa2.webp)"></div>
+                            <div class="sliderImg" style="background-image: url(media/3DMax/Sofa/Sofa3.webp)"></div>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- EXPORTER -->
+            <div class="singleContent">
+                <div class="content">
+                    <div class="title3">Exportador para Unreal</div>
+                    <div class="paragraph">
+                        Herramienta que exporta assets preparados para ser introducidos 
+                        en el motor Unreal
+                    </div>
+                </div>
+                <div class="imgContent content" id="exporterImg"></div>
+            </div>
+
+            <!-- ROOM BUILDER -->
+            <div class="singleContent">
+                <div class="content">
+                    <div class="title3">Creador procedural de habitaciones</div>
+                    <div class="paragraph">
+                        Herramienta para crear habitaciones compuestas de puertas, 
+                        ventanas y paredes. Todo proceduralmente a partir de los datos 
+                        que le introduce el usuario. La habitación creada se compone de 
+                        módulos, los cuales son intercambiables
+                    </div>
+                </div>
+                <div class="imgContent content" id="roomImg"></div>
+            </div>
+        </div>
+
+        <!-- C++ MOTOR -->
+        <div class="singleContent">
+            <div class="content">
+                <div class="title2">Motor en C++</div>
+                <div class="description">C++ + con/sin OpenGL + Shaders</div>
+                <div class="paragraph">
+                    Programación de la base de un motor para videojuegos con físicas
+                </div>
+            </div>
+            <div class="imgContent content" id="motorImg"></div>
+        </div>
+
+        <!-- SHADERS -->
+        <div class="singleContent">
+            <div class="content">
+                <div class="title2">Shaders</div>
+                <div class="description">Unreal + Unity - Blueprints + C</div>
+                <div class="paragraph">
+                    Shaders en Unity y Unreal. Mi investigación de fin de carrera 
+                    consiste en un shader de agua que reacciona ante el jugador
+                </div>
+            </div>
+            <!-- <div class="imgContent content" id="shadersImg"></div> -->
+            <div class="imgContent content" id="shadersImg">In process</div>
+        </div>
+
+        <!-- RELIGHT -->
+        <div class="singleContent">
+
+                <div class="content">
+                    <div class="title2">Relight</div>
+                    <div class="description">Unreal - Blueprints + C++</div>
+                    <div class="paragraph">
+                        Relight es una experiencia narrativa y ambiental que acompaña al 
+                        jugador en un viaje de exploración de una civilización basada en 
+                        la cultura hindú que refleja la discriminación en la sociedad 
+                        actual
+                    </div>
+                    <div class="paragraph">
+                        Proyecto de fin de grado, por DreamStudio.
+                    </div>
+                </div>
+
+                <div class="sliderContainer content">
+                    <div class="backgroundSliderContainer2">
+                        <div class="sliderImg" style="background-image: url(media/Relight/Relight_1.webp)"></div>
+                        <div class="sliderImg" style="background-image: url(media/Relight/Relight_2.webp)"></div>
+                    </div>
+                </div>
+
+            </div>
+
+    </div>
+
+    <!-- CONTACT -->
+    <div id="boxContact">
+        
+        <div id="rrssContainer">
+
+            <div class="infoRrss">
+                <a id="linkedIn" class="rrssImg"  href="https://www.linkedin.com/in/paula-jiménez-benito-927025151/"></a>
+                <div class="paragraph">Paula Jiménez Benito</div>
+            </div>
+            
+            <div class="infoRrss">
+                <div id="gmail" class="rrssImg"></div>
+                <div class="paragraph">paulajb97@gmail.com</div>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+
+
+
+
+
 
 </body>
 
