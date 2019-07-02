@@ -5,7 +5,36 @@ html, body{
 
 	background-color: rgb(31, 31, 31);
 
-	/*height: 100%;*/
+    /*height: 100%;*/
+    
+    /* font-family: 'Merriweather Sans', sans-serif;       Titles */
+    font-family: 'Fira Sans Condensed', sans-serif;     /* Base */
+    /* font-family: 'Amatic SC', cursive;                  Cute phrases */
+
+
+}
+
+#buttonLanguage{
+
+    /* position: absolute; */
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: bold;
+
+    border-radius: 8px;
+    background-color: #e7e7e7; color: black;
+
+    font-size: 1em;
 
 }
 
@@ -43,6 +72,8 @@ header{
     text-align: center;
     font-size: 4em;
 
+    font-family: 'Merriweather Sans', sans-serif;
+
 }
 
 #boxMyself{
@@ -63,7 +94,7 @@ header{
 
 .box{
 
-    width: 45%;
+    /* width: 45%; */
     
     display: flex;
     flex-direction: column;
@@ -81,16 +112,33 @@ header{
     font-size: 3em;
     font-weight: bold;
 
+    font-family: 'Merriweather Sans', sans-serif;
+
 }
 
 .title2{
 
-    margin-top: 3%;
+    margin-top: 4%;
 
     color: white;
     text-align: justify;
     font-size: 2.5em;
     font-weight: bold;
+
+    font-family: 'Merriweather Sans', sans-serif;
+
+}
+
+.title3{
+
+    margin-top: 2%;
+
+    color: white;
+    text-align: justify;
+    font-size: 2em;
+    font-weight: bold;
+
+    font-family: 'Merriweather Sans', sans-serif;
 
 }
 
@@ -106,17 +154,6 @@ header{
 
 }
 
-.title3{
-
-    margin-top: 1.5%;
-
-    color: white;
-    text-align: justify;
-    font-size: 2em;
-    font-weight: bold;
-
-}
-
 .paragraph{
 
     margin-top: 1%;
@@ -129,7 +166,14 @@ header{
 
 .en{
 
-    font-style: italic;
+    /* font-style: italic; */
+    display: none;
+
+}
+
+.sp{
+
+    display: block;
 
 }
 
@@ -158,7 +202,7 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
 
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     
 }
@@ -175,7 +219,7 @@ header{
 
     /* background-image: url("../media/LogoCara.webp"); */
 
-    /* background-size: cover; */
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -432,6 +476,18 @@ header{
     
     }
 
+    .imgContent{
+
+        min-height: 400px;
+
+    }
+
+    #buttonLanguage{
+
+        font-size: 1.5em;
+    
+    }
+
 }
 
 /* Phone */
@@ -441,6 +497,18 @@ header{
 
         width: 100%;
         margin-top: 2%;
+    
+    }
+
+    .imgContent{
+
+        min-height: 400px;
+        
+    }
+
+    #buttonLanguage{
+
+        font-size: 1.5em;
     
     }
 
