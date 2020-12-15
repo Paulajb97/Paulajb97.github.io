@@ -3,7 +3,7 @@
 
 html, body{
 
-	background-color: rgb(31, 31, 31);
+	/* background-color: rgb(31, 31, 31); */
 
     /*height: 100%;*/
     
@@ -12,6 +12,18 @@ html, body{
     /* font-family: 'Amatic SC', cursive;                  Cute phrases */
 
 
+}
+
+#background-global
+{
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+
+    background-color: rgb(51, 51, 51);
+    
+    z-index: -3;
 }
 
 #buttonLanguage{
@@ -40,8 +52,6 @@ html, body{
 
 header{
 
-    background-color: rgb(16, 16, 16);
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -49,6 +59,20 @@ header{
     place-content: center;
     align-items: center;
 
+    padding-top: 2%;
+}
+
+#background-header
+{
+    width: 100%;
+    height: 90%;
+
+    position: absolute;
+
+    background-color: rgb(16, 16, 16);
+    opacity: 0.75;
+
+    z-index: -1;
 }
 
 #logo{
@@ -56,7 +80,7 @@ header{
     width: 100px;
     height: 100px;
 
-    margin: 1%;
+    margin: 2%;
 
     background-image: url("../media/LogoCara.webp");
     background-size: cover;
@@ -78,7 +102,7 @@ header{
 
 #boxMyself{
 
-    margin-top: 3%;
+    /* margin-top: 3%; */
     margin-left: 10%;
     margin-right: 10%;
     padding: 3%;

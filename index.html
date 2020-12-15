@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+    
+    <div id="background-global"></div>
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +10,20 @@
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Fira+Sans+Condensed|Merriweather+Sans&display=swap" rel="stylesheet">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/code.js"></script>
+
+    <!-- P5 -->
+    <script src="p5/p5.js"></script>
+    <!-- <script id="hi" src="p5/Test/sketch.js"></script> -->
+    
+    <script src="p5/Background_1/BezierCurve.js"></script>
+    <script src="p5/Background_1/sketch.js"></script>
+
+    <script>
+        window.onresize = function(event) 
+        {
+            resizeCanvasHTML();
+        }
+    </script>
 </head>
 
 <!-- Language -->
@@ -19,6 +35,7 @@
 
 <header>
 
+    <div id="background-header"></div>
     <a id="logo" href="https://www.linkedin.com/in/paula-jiménez-benito-927025151/"></a>
     <div id="topName">Paula Jiménez Benito</div>
 
@@ -317,7 +334,7 @@
         </div>
 
         <!-- SHADERS -->
-        <div class="singleContent">
+        <!-- <div class="singleContent">
             <div class="content">
                 <div class="title2">Shaders</div>
                 <div class="description">Unreal + Unity - Blueprints + C</div>
@@ -330,10 +347,27 @@
                     consists of a water shader that reacts to the player
                 </div>
             </div>
-            <!-- <div class="imgContent content" id="shadersImg"></div> -->
             <div class="imgContent content sp" id="shadersImg">En proceso</div>
             <div class="imgContent content en" id="shadersImg">In process</div>
-        </div>
+        </div> -->
+
+        <!-- P5 -->
+        <!-- <div class="singleContent">
+            <div class="content">
+                <div class="title2 sp">Motor en C++</div>
+                <div class="title2 en">Engine in C++</div>
+                <div class="description sp">C++ + con/sin OpenGL + Shaders</div>
+                <div class="description en">C ++ + with/without OpenGL + Shaders</div>
+                <div class="paragraph sp">
+                    Programación de la base de un motor para videojuegos con físicas
+                </div>
+                <div class="paragraph en">
+                    Programming the base of a motor for videogames with physics
+                </div>
+            </div>
+            <div class="imgContent content" id="canvasP5">
+            </div>
+        </div> -->
 
         <!-- RELIGHT -->
         <!-- <div class="singleContent">
