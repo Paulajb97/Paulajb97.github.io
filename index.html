@@ -1,428 +1,334 @@
 <!DOCTYPE html>
-<html>
-    
-    <div id="background-global"></div>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hi, I'm Paula</title>
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Fira+Sans+Condensed|Merriweather+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/code.js"></script>
-
-    <!-- P5 -->
-    <script src="p5/p5.js"></script>
-    <!-- <script id="hi" src="p5/Test/sketch.js"></script> -->
-    
-    <script src="p5/Background_1/BezierCurve.js"></script>
-    <script src="p5/Background_1/sketch.js"></script>
-
-    <!-- <script>
-        window.onresize = function(event) 
-        {
-            resizeCanvasHTML();
-        }
-    </script> -->
+    <title>Hi, I'm Paula</title>
 </head>
-
-<!-- Language -->
-
-<button id="buttonLanguage">
-    ES / EN
-</button>
-
-
-<header>
-
-    <div id="background-header"></div>
-    <a id="logo" href="https://www.linkedin.com/in/paula-jiménez-benito-927025151/"></a>
-    <div id="topName">Paula Jiménez Benito</div>
-
-</header>
-
-
-<body  onload="Init();">
-
-    <!-- MYSELF -->
-    <div id="boxMyself">
-
-        <div class="box">
-
-            <div class="title sp">¿Quién soy?</div>
-
-            <div class="paragraph sp">
-                Graduada en Diseño y Desarrollo de Videojuegos, soy programadora 
-                de videojuegos, aunque no me limito sólo a eso. ¿Qué quiere decir 
-                ésto? Que puedo hacer que un personaje se mueva al antojo de un 
-                jugador, hacer una web, aplicaciones o incluso crear herramientas 
-                para hacer la vida más fácil a otros desarrolladores.
-            </div>
-            <div class="paragraph sp">
-                Por otra parte, también soy desarrolladora de audio para videojuegos. Aunque 
-                en este mundo todavía me queda camino por delante.
-            </div>
-
-        </div>
-
-        <div class="box">
-
-            <div class="title en">Who am I?</div>
-            <div class="paragraph en">
-                    Graduated in Videogame Design and Development, I am a videogame 
-                    programmer, although I do not limit myself to that. What does this mean? 
-                    That I can make a character move at the whim of a player, make a web, 
-                    applications or even create tools to make life easier for other developers.
-            </div>
-            <div class="paragraph en">
-                    On the other hand, I am also an audio developer for videogames. 
-                    Although in this world I still have a way ahead.
-            </div>
-
-        </div>
-
-    </div>
+<body onload="Init();">
     
-    <!-- CURRENT PROJECT -->
-    <div class="boxContent">
-
-        <div class="title sp">Proyecto actual</div>
-        <div class="title en">Current project</div>
-
-        <!-- RELIGHT -->
-        <div class="singleContent">
-
-            <div class="content">
-                <div class="title2">Relight</div>
-                <div class="description">Unreal - Blueprints + C++</div>
-                <div class="paragraph sp">
-                    Relight es una experiencia narrativa y ambiental que acompaña al 
-                    jugador en un viaje de exploración de una civilización basada en 
-                    la cultura hindú que refleja la discriminación en la sociedad 
-                    actual
-                </div>
-                <div class="paragraph en">
-                    Relight is a narrative and environmental experience that accompanies 
-                    the player on a journey of exploration of a civilization based on 
-                    Hindu culture that reflects discrimination in today's society
-                </div>
-                <div class="paragraph sp">
-                    Proyecto de fin de grado, por 
-                    <a class="auxLink" href="https://twitter.com/DreamStudio_GD" target="_blank">DreamStudio</a>.
-                </div>
-                <div class="paragraph en">
-                    Final degree project, by 
-                    <a class="auxLink" href="https://twitter.com/DreamStudio_GD" target="_blank">DreamStudio</a>.
-                </div>
+    <!-- HOME -->
+    <div class="home flex_center">
+        <div class="image_home"></div>
+        
+        <div class="text_home">
+            <div class="sp">
+                Hola, soy <span class="highlight">Paula</span>. <br>
+                Soy programadora de videojuegos.
             </div>
-
-            <div class="sliderContainer content">
-                <div class="backgroundSliderContainer2">
-                    <div class="sliderImg" style="background-image: url(media/Relight/Relight_1.webp)"></div>
-                    <div class="sliderImg" style="background-image: url(media/Relight/Relight_2.webp)"></div>
-                </div>
+            <div class="en">
+                Hi, I'm <span class="highlight">Paula</span>. <br>
+                I'm a videogame programmer.
             </div>
-
         </div>
-
     </div>
-    
-    <!-- CONTENT -->
-    <div class="boxContent">
 
-        <div class="title sp">Mis proyectos</div>
-        <div class="title en">My projects</div>
 
-        <!-- DATA LOADER -->
-        <div class="singleContent">
-            <div class="content">
-                <div class="title2">DataLoader</div>
-                <div class="description sp">Unity - C# + C++ + Bases de datos</div>
-                <div class="description en">Unity - C# + C++ + Databases</div>
-                <div class="paragraph sp">
-                    DataLoader es una herramienta para Unity y, en un futuro, Unreal.
-                    Que guarda configuraciones tanto en una base de datos local como
-                    en un xml, a elección  del usuario. Estas configuraciones se pueden 
-                    establecer en cualquier actor que tenga el recipiente adecuado. En 
-                    este caso, el recipiente es una variable del tipo DatabaseRow.
+    <!-- SOCIAL MEDIA HOME - MOBILE ONLY -->
+    <div class="social_media_home">
+        <a class="icon linkedin_icon"
+        href="https://www.linkedin.com/in/paula-jimenez-benito/">
+        <img src="media/SocialMedia/linkedin.svg" alt="LinkedIn">
+    </a>
+    <div class="icon mail_icon">
+            <p class="icon_text">paulajb97@gmail.com</p>
+            <img src="media/SocialMedia/mail.svg" alt="e-mail">
+        </div>
+        <a class="icon itchio_icon"
+            href="https://lucidgem.itch.io/">
+            <img src="media/SocialMedia/gamepad.svg" alt="itch.io">
+        </a>
+    </div>
+
+
+    <!-- ABOUT -->
+    <div class="about block flex_center_space">
+        <img class="foto_about" src="media/AboutMe/Polaroid.jpg" alt="">
+        <div class="text_about">
+            <div class="title">
+                <div class="sp">
+                    Sobre <span class="highlight">mí</span>
                 </div>
-                <div class="paragraph en">
-                    DataLoader is a tool for Unity and, in the future, Unreal. It saves 
-                    configurations in a local database as well as in an xml, 
-                    at the user's choice. These configurations can be set on any actor 
-                    that has the right container. In this case, the container is a 
-                    variable of the DatabaseRow type.
+                <div class="en">
+                    About <span class="highlight">me</span>
                 </div>
             </div>
-            <div class="sliderContainer content">
-                <div class="backgroundSliderContainer4">
-                    <div class="sliderImg" style="background-image: url(media/DataLoader/Database.webp)"></div>
-                    <div class="sliderImg" style="background-image: url(media/DataLoader/Database2.webp)"></div>
-                    <div class="sliderImg" style="background-image: url(media/DataLoader/Xml.webp)"></div>
-                    <div class="sliderImg" style="background-image: url(media/DataLoader/Xml2.webp)"></div>
+
+            <div class="content_text_about">
+                <div class="sp">
+                    Graduada en Diseño y Desarrollo de Videojuegos, especializada en programación.
+                    <br>
+                    <br>
+                    Desde que descubrí la programación hace unos años, es algo que me apasiona. 
+                    Siempre me han encantado los juegos de lógica, los puzles, los acertijos...
+                    ¡y la programación me los ofrece constantemente!
+                    <br>
+                    <br>
+                    Tanto en gameplay como en creación de herramientas, me encanta darle
+                    solución a los retos que se me plantean.
+                </div>
+                <div class="en">
+                    Graduated in Video Game Design and Development, specialized in programming.
+                    <br>
+                    <br>
+                    Since I discovered programming a few years ago, it's something I've been 
+                    passionate about. I've always loved logic games, puzzles, riddles.... and 
+                    programming offers them to me all the time!
+                    <br>
+                    <br>
+                    Both in gameplay and in tool creation, I love to give solutions to the 
+                    challenges I am presented with.
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- IA -->
-        <div>
-            <div class="title2 sp">IA</div>
-            <div class="title2 en">AI</div>
-            <div class="description sp">Unity - IA + C#</div>
-            <div class="description en">Unity - AI + C#</div>
 
-            <!-- NEGAMAX AB -->
-            <!-- <div class="singleContent">
-                <div class="content">
-                    <div class="title3">NegaMax AB</div>
-                    <div class="paragraph">
-                        IA para damas chinas con el algoritmo negamax con poda alfa-beta
-                    </div>
-                </div>
-                <div class="imgContent content" id="negamaxImg"></div>
-            </div> -->
-
-            <!-- HILL CLIMBING -->
-            <div class="singleContent">
-                <div class="content">
-                    <div class="title3">Hill climbing</div>
-                    <div class="paragraph sp">
-                        IA que aprende a tirar a canasta usando de base 
-                        el algoritmo de Hill Climbing
-                    </div>
-                    <div class="paragraph en">
-                        AI that learns to shoot to basket using the 
-                        algorithm of Hill Climbing
-                    </div>
-                </div>
-                <div class="imgContent content" id="hillImg"></div>
+    <!-- CURRENT WORK -->
+    <div class="current block">
+        <div class="title block_header">
+            <div class="sp">
+                ¿A qué me dedico&nbsp<span class="highlight">actualmente</span>?
             </div>
-
-            <!-- GENETIC ALGORITHM -->
-            <div class="singleContent">
-                <div class="content">
-                    <div class="title3 sp">Algoritmo genético</div>
-                    <div class="title3 en">Genetic algorithm</div>
-                    <div class="paragraph sp">
-                        Actores que evolucionan para poder escapar con mayor eficacia 
-                        del jugador
-                    </div>
-                    <div class="paragraph en">
-                        Actors who evolve to be able to escape more effectively from the player
-                    </div>
-                </div>
-                <div class="imgContent content" id="genImg"></div>
-            </div>
-
-            <!-- NEURAL NETWORK -->
-            <div class="singleContent">
-                <div class="content">
-                    <div class="title3">Doodle guesser</div>
-                    <div class="paragraph sp">
-                        IA que reconoce dibujos gracias a una red neuronal
-                    </div>
-                    <div class="paragraph en">
-                        AI that recognizes drawings thanks to a neural network
-                    </div>
-                </div>
-                <div class="imgContent content" id="neuralImg"></div>
+            <div class="en">
+                What do I do <span class="highlight">nowadays</span>?
             </div>
         </div>
-
-        <!-- COPY THE PATRON -->
-        <div class="singleContent">
-            <div class="content">
-                <div class="title2">Copy the patron</div>
-                <div class="description">Js + C++</div>
-                <div class="paragraph sp">
-                    Juego realizado en JavaScript y C++ en el que tienes que 
-                    reprocudir el patrón de ejemplo pulsando las casillas correctas 
-                    y colocando casillas extra en el caso de que te las proporcionen
-                </div>
-                <div class="paragraph en">
-                    Game made in JavaScript and C ++ in which you have to 
-                    reprocess the example pattern by clicking the correct 
-                    boxes and placing extra boxes in case they are provided
-                </div>
-            </div>
-            <div class="imgContent content" id="copyImg">
-                <!-- <img src="media/CopyPatron/playweb.gif" alt=""> -->
-            </div>
-        </div>
-
-        <!-- 3DMAX TOOLS -->
-        <div>
-            <div class="title2 sp">Herramientas para 3D Max</div>
-            <div class="title2 en">Tools for 3D Max</div>
-            <div class="description">3D Max - MaxScript</div>
-
-            <!-- SOFA GENERATOR -->
-            <div class="singleContent">
-                <div class="content">
-                    <div class="title3 sp">Generador de sofás</div>
-                    <div class="title3 en">Sofa generator</div>
-                    <div class="paragraph sp">
-                        Herramienta que modela sofás en base a los 
-                        datos que le introduce el usuario
-                    </div>
-                    <div class="paragraph en">
-                        Tool that models sofas based on the data that 
-                        the user introduces
-                    </div>
-                </div>
-                <div class="sliderContainer content">
-                        <div class="backgroundSliderContainer3">
-                            <div class="sliderImg" style="background-image: url(media/3DMax/Sofa/Sofa1.webp)"></div>
-                            <div class="sliderImg" style="background-image: url(media/3DMax/Sofa/Sofa2.webp)"></div>
-                            <div class="sliderImg" style="background-image: url(media/3DMax/Sofa/Sofa3.webp)"></div>
+        
+        <div class="center_container">
+            <div class="projects_container">
+                <div class="column_element">
+                    <div class="mini_title">Virtual production LED Wall</div>
+                    <video class="video_content" 
+                        src="media/Current/LEDWallProjects.mp4"
+                        autoplay muted loop>
+                    </video>
+                    <div class="description_current">
+                        <div class="sp">
+                            Soporte técnico y producción de proyectos para LED Wall en <span class="highlight">Unreal Engine 4 y 5</span>.
+                        </div>
+                        <div class="en">
+                            Technical support and production of projects for LED Wall in <span class="highlight">Unreal Engine 4 and 5</span>.
                         </div>
                     </div>
-            </div>
-
-            <!-- EXPORTER -->
-            <div class="singleContent">
-                <div class="content">
-                    <div class="title3 sp">Exportador de assets para Unreal</div>
-                    <div class="title3 en">Asset exporter for Unreal</div>
-                    <div class="paragraph sp">
-                        Herramienta que exporta assets preparados para ser introducidos 
-                        en el motor Unreal
+                </div>
+                <div class="column_element">
+                    <div class="mini_title">
+                        <div class="sp">
+                            Herramientas y plugins
+                        </div>
+                        <div class="en">
+                            Tools and plugins
+                        </div>
                     </div>
-                    <div class="paragraph en">
-                        Tool that exports assets prepared to be introduced in the Unreal engine
+                    <div class="description_current">
+                        <div class="sp">
+                            Creación de diferentes herramientas y plugins de <span class="highlight">Unreal</span> para producción virtual.<br>
+                            Entre ellas:
+                            <ul>
+                                <li>Grabación de movimiento de cámara real y su importación a 3DS Max y Sequence de Unreal</li>
+                                <br>
+                                <li>Movimiento de escenario y gestión de posiciones</li>
+                                <br>
+                                <li>Creación de diferentes eventos para rodaje</li>
+                            </ul>
+                        </div>
+                        <div class="en">
+                            Creation of different <span class="highlight">Unreal</span> tools and plugins for virtual production.<br>
+                            These include:
+                            <ul>
+                                <li>Real camera motion recording and its import to 3DS Max and Unreal Sequence</li>
+                                <br>
+                                <li>Stage movement and position management</li>
+                                <br>
+                                <li>Creation of different events for filming</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="imgContent content" id="exporterImg"></div>
-            </div>
-
-            <!-- ROOM BUILDER -->
-            <div class="singleContent">
-                <div class="content">
-                    <div class="title3 sp">Creador procedural de habitaciones</div>
-                    <div class="title3 en">Procedural creator of rooms</div>
-                    <div class="paragraph sp">
-                        Herramienta para crear habitaciones compuestas de puertas, 
-                        ventanas y paredes. Todo proceduralmente a partir de los datos 
-                        que le introduce el usuario. La habitación creada se compone de 
-                        módulos, los cuales son intercambiables
+                <div class="column_element">
+                    <div class="mini_title">
+                        <div class="sp">
+                            Croma en Unreal
+                        </div>
+                        <div class="en">
+                            Chroma key in Unreal
+                        </div>
                     </div>
-                    <div class="paragraph en">
-                        Tool to create rooms composed of doors, windows and walls. 
-                        All proceduralmente from the data that the user introduces. 
-                        The room created consists of modules, which are interchangeable
+                    <video class="video_content" 
+                        src="media/Current/Chroma.mp4"
+                        autoplay muted loop>
+                    </video>
+                    <div class="description_current">
+                        <div class="sp">
+                            Incrustación de croma en tiempo real y composición en <span class="highlight">Unreal</span>.
+                        </div>
+                        <div class="en">
+                            Real-time chroma keying and compositing in <span class="highlight">Unreal</span>.
+                        </div>
+                    </div>
                     </div>
                 </div>
-                <div class="imgContent content" id="roomImg"></div>
             </div>
         </div>
-
-        <!-- C++ MOTOR -->
-        <div class="singleContent">
-            <div class="content">
-                <div class="title2 sp">Motor en C++</div>
-                <div class="title2 en">Engine in C++</div>
-                <div class="description sp">C++ + con/sin OpenGL + Shaders</div>
-                <div class="description en">C ++ + with/without OpenGL + Shaders</div>
-                <div class="paragraph sp">
-                    Programación de la base de un motor para videojuegos con físicas
-                </div>
-                <div class="paragraph en">
-                    Programming the base of a motor for videogames with physics
-                </div>
-            </div>
-            <div class="imgContent content" id="motorImg"></div>
-        </div>
-
-        <!-- SHADERS -->
-        <!-- <div class="singleContent">
-            <div class="content">
-                <div class="title2">Shaders</div>
-                <div class="description">Unreal + Unity - Blueprints + C</div>
-                <div class="paragraph sp">
-                    Shaders en Unity y Unreal. Mi investigación de fin de carrera 
-                    consiste en un shader de agua que reacciona ante el jugador
-                </div>
-                <div class="paragraph en">
-                    Shaders in Unity and Unreal. My end-of-career research 
-                    consists of a water shader that reacts to the player
-                </div>
-            </div>
-            <div class="imgContent content sp" id="shadersImg">En proceso</div>
-            <div class="imgContent content en" id="shadersImg">In process</div>
-        </div> -->
-
-        <!-- P5 -->
-        <!-- <div class="singleContent">
-            <div class="content">
-                <div class="title2 sp">Motor en C++</div>
-                <div class="title2 en">Engine in C++</div>
-                <div class="description sp">C++ + con/sin OpenGL + Shaders</div>
-                <div class="description en">C ++ + with/without OpenGL + Shaders</div>
-                <div class="paragraph sp">
-                    Programación de la base de un motor para videojuegos con físicas
-                </div>
-                <div class="paragraph en">
-                    Programming the base of a motor for videogames with physics
-                </div>
-            </div>
-            <div class="imgContent content" id="canvasP5">
-            </div>
-        </div> -->
-
-        <!-- RELIGHT -->
-        <!-- <div class="singleContent">
-
-            <div class="content">
-                <div class="title2">Relight</div>
-                <div class="description">Unreal - Blueprints + C++</div>
-                <div class="paragraph">
-                    Relight es una experiencia narrativa y ambiental que acompaña al 
-                    jugador en un viaje de exploración de una civilización basada en 
-                    la cultura hindú que refleja la discriminación en la sociedad 
-                    actual
-                </div>
-                <div class="paragraph">
-                    Proyecto de fin de grado, por DreamStudio.
-                </div>
-            </div>
-
-            <div class="sliderContainer content">
-                <div class="backgroundSliderContainer2">
-                    <div class="sliderImg" style="background-image: url(media/Relight/Relight_1.webp)"></div>
-                    <div class="sliderImg" style="background-image: url(media/Relight/Relight_2.webp)"></div>
-                </div>
-            </div>
-
-        </div> -->
-
-    </div>
-
-    <!-- CONTACT -->
-    <div id="boxContact">
         
-        <div id="rrssContainer">
-
-            <div class="infoRrss">
-                <a id="linkedIn" class="rrssImg"  href="https://www.linkedin.com/in/paula-jiménez-benito-927025151/"></a>
-                <div class="paragraph">Paula Jiménez Benito</div>
-            </div>
-            
-            <div class="infoRrss">
-                <div id="gmail" class="rrssImg"></div>
-                <div class="paragraph">paulajb97@gmail.com</div>
-            </div>
-            
-        </div>
-
     </div>
 
 
+    <!-- MY PROJECTS -->
+    <div class="my_stuff block">
+        <div class="title block_header">
+            <div class="sp">
+                Mis&nbsp<span class="highlight">proyectos</span>&nbspy participaciones
+            </div>
+            <div class="en">
+                My <span class="highlight">projects</span> and participations
+            </div>
+        </div>
+
+        <div class="center_container">
+            <div class="projects_container">
+                <div class="column_element">
+                    <div class="mini_title">Relight</div>
+                    <video class="video_content" 
+                        src="media/MyStuff/Relight.mp4"
+                        autoplay muted loop>
+                    </video>
+                    <div class="description_current">
+                        <div class="sp">
+                            Mi proyecto de fin de carrera. Hecho en <span class="highlight">Unreal 4</span>.
+                            <br><br>
+                            Relight es una experiencia narrativa y ambiental que acompaña al 
+                            jugador en un viaje de exploración de una civilización basada en 
+                            la cultura hindú que refleja la discriminación en la sociedad 
+                            actual.
+                            <br><br>
+                            Mi participación:
+                            <ul>
+                                <li>Movimiento del personaje</li>
+                                <li>Mecánica de interacción</li>
+                                <li>Reflejo de interacciones en materiales</li>
+                            </ul>
+                        </div>
+                        <div class="en">
+                            My final degree project. Made in <span class="highlight">Unreal 4</span>.
+                            <br><br>
+                            Relight is a narrative and environmental experience that accompanies the 
+                            player on a journey of exploration of a civilization based on Hindu 
+                            culture that reflects discrimination in today's society.
+                            <br><br>
+                            My participation:
+                            <ul>
+                                <li>Character movement</li>
+                                <li>Mechanics of interaction</li>
+                                <li>Reflection of interactions in materials</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="column_element">
+                    <div class="mini_title">Another day</div>
+                    <div class="video_fade">
+                        <video class="video_content" 
+                            src="media/MyStuff/AnotherDay.mp4"
+                            autoplay muted loop>
+                        </video>
+                        <a class="text_link"
+                            href="https://lucidgem.itch.io/another-day">
+                            <div class="sp">¡Disponible en itch.io!</div>
+                            <div class="en">Available on itch.io!</div>
+                        </a>
+                    </div>
+                    <div class="description_current">
+                        <div class="sp">
+                            Surgió en la Ludum Dare 2020. Hecho en <span class="highlight">Unity</span>.
+                            <br><br>
+                            En Another Day tienes que sobrevivir a la rutina durante la cuarentena haciendo tareas 
+                            sencillas pero... tu estatus afecta a esto.
+                            <br><br>
+                            Mi participación:
+                            <ul>
+                                <li>Desplazamiento entre escenarios</li>
+                                <li>Programacióne implementación de botones de interacción</li>
+                                <li>Visualización de la hora</li>
+                            </ul>
+                        </div>
+                        <div class="en">
+                            Emerged at Ludum Dare 2020. Made in <span class="highlight">Unity</span>.
+                            <br><br>
+                            In Another Day you have to survive the routine during quarantine by 
+                            doing simple tasks but... your status affects this.
+                            <br><br>
+                            My participation:
+                            <ul>
+                                <li>Movement between scenarios</li>
+                                <li>Programming and implementation of interaction buttons</li>
+                                <li>Time display</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="column_element">
+                    <div class="mini_title">Patterns</div>
+                    <div class="video_fade">
+                        <video class="video_content" 
+                            src="media/MyStuff/Patterns.mp4"
+                            autoplay muted loop>
+                        </video>
+                        <a class="text_link"
+                            href="https://lucidgem.itch.io/patterns">
+                            <div class="sp">¡Disponible en itch.io!</div>
+                            <div class="en">Available on itch.io!</div>
+                        </a>
+                    </div>
+                    <div class="description_current">
+                        <div class="sp">
+                            Patterns es un proyecto propio. Hecho en <span class="highlight">Unity</span>.
+                            <br><br>
+                            Haz clic en los botones de colores con líneas y recrea los diferentes patrones que aparecen.
+                            <br><br>
+                            Puedes elegir entre 3 tamaños de tablero o probar el contrarreloj para ver cuántos patrones puedes resolver en 30 segundos.
+                        </div>
+                        <div class="en">
+                            Patterns is an own project. Made in <span class="highlight">Unity</span>.
+                            <br><br>
+                            Click on the colored buttons with lines and recreate the different patterns that appear.
+                            <br><br>
+                            You can choose from 3 board sizes or try the time trial to see how many patterns you can solve in 30 seconds!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- SOCIAL MEDIA -->
+    <div class="social_media">
+        <a class="icon linkedin_icon"
+            href="https://www.linkedin.com/in/paula-jimenez-benito/">
+            <img src="media/SocialMedia/linkedin.svg" alt="LinkedIn">
+            <p class="icon_text">LinkedIn</p>
+        </a>
+        <div class="icon mail_icon">
+            <img src="media/SocialMedia/mail.svg" alt="e-mail">
+            <p class="icon_text">paulajb97@gmail.com</p>
+        </div>
+        <a class="icon itchio_icon"
+            href="https://lucidgem.itch.io/">
+            <img src="media/SocialMedia/gamepad.svg" alt="itch.io">
+            <p class="icon_text">itch.io</p>
+        </a>
+    </div>
 
 
-
-
-
+    <!-- LANGUAGE BUTTON -->
+    <button id="buttonLanguage">
+        ES / EN
+    </button>
 
 </body>
-
 </html>

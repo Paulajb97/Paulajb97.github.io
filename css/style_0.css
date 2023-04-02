@@ -1,0 +1,544 @@
+
+/* --------- Base --------- */
+
+html, body{
+
+	/* background-color: rgb(31, 31, 31); */
+
+    /* font-family: 'Merriweather Sans', sans-serif;       Titles */
+    font-family: 'Fira Sans Condensed', sans-serif;     /* Base */
+    /* font-family: 'Amatic SC', cursive;                  Cute phrases */
+
+
+    margin: 0%;
+}
+
+#background-global
+{
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+
+    background-color: rgb(51, 51, 51);
+    
+    z-index: -3;
+}
+
+#buttonLanguage{
+
+    /* position: absolute; */
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: bold;
+
+    border-radius: 8px;
+    background-color: #e7e7e7; color: black;
+
+    font-size: 1em;
+
+}
+
+header{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    place-content: center;
+    align-items: center;
+
+    padding-top: 2%;
+}
+
+#background-header
+{
+    width: 100%;
+    height: 90%;
+
+    position: absolute;
+
+    background-color: rgb(16, 16, 16);
+    opacity: 0.75;
+
+    z-index: -1;
+}
+
+#logo{
+
+    width: 100px;
+    height: 100px;
+
+    margin: 2%;
+
+    background-image: url("../media/LogoCara.webp");
+    background-size: cover;
+    background-position: center;
+
+}
+
+#topName{
+
+    margin-left: 20px;
+
+    color: white;
+    text-align: center;
+    font-size: 4em;
+
+    font-family: 'Merriweather Sans', sans-serif;
+
+}
+
+#boxMyself{
+
+    /* margin-top: 3%; */
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 3%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-content: flex-start;
+    justify-content: space-between;
+
+}
+
+.box{
+
+    /* width: 45%; */
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+
+.title{
+
+    margin-top: 4%;
+
+    color: white;
+    text-align: justify;
+    font-size: 3em;
+    font-weight: bold;
+
+    font-family: 'Merriweather Sans', sans-serif;
+
+}
+
+.title2{
+
+    margin-top: 4%;
+
+    color: white;
+    text-align: justify;
+    font-size: 2.5em;
+    font-weight: bold;
+
+    font-family: 'Merriweather Sans', sans-serif;
+
+}
+
+.title3{
+
+    margin-top: 2%;
+
+    color: white;
+    text-align: justify;
+    font-size: 2em;
+    font-weight: bold;
+
+    font-family: 'Merriweather Sans', sans-serif;
+
+}
+
+.description{
+
+    margin-top: 1.5%;
+
+    color: white;
+    text-align: justify;
+    font-size: 2em;
+    font-weight: lighter;
+    text-decoration: underline;
+
+}
+
+.paragraph{
+
+    margin-top: 1%;
+
+    color: white;
+    text-align: justify;
+    font-size: 1.5em;
+
+}
+
+.auxLink{
+    
+    color: white;
+    
+}
+
+.en{
+
+    /* font-style: italic; */
+    display: none;
+
+}
+
+.sp{
+
+    display: block;
+
+}
+
+
+.boxContent{
+
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 3%;
+
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-content: flex-start;
+    justify-content: space-between; */
+
+}
+
+.singleContent{
+
+    margin-top: 2%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+
+.content{
+
+    width: 45%;
+
+}
+
+.imgContent{
+
+    min-height: 300px;
+
+    /* background-image: url("../media/LogoCara.webp"); */
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+
+/* --------- IDs images ---------*/
+
+#hillImg{
+
+    background-image: url("../media/IA/HillClimbing/basket.gif");
+
+}
+#genImg{
+
+    background-image: url("../media/IA/Genetic/genetic.gif");
+
+}
+#neuralImg{
+
+    background-image: url("../media/IA/NeuralNetwork/neural.gif");
+
+}
+
+#copyImg{
+
+    background-image: url("../media/CopyPatron/playweb.gif");
+
+}
+
+#exporterImg{
+
+    background-image: url("../media/3DMax/Export/Export.webp");
+
+}
+
+#roomImg{
+
+    background-image: url("../media/3DMax/Rooms/rooms.gif");
+
+}
+
+#motorImg{
+
+    background-image: url("../media/Render/catapult.gif");
+
+}
+
+#shadersImg{
+
+    /* background-image: url("../media/InProcess.webp"); */
+
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    
+    line-height: 300px;
+
+}
+
+
+
+/* --------- Slider images --------- */
+
+.sliderContainer
+{
+
+    min-height: 300px;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.backgroundSliderContainer2
+{
+
+    height: 100%;
+    width: 200%;
+    position: absolute;
+
+    display: flex;
+
+    animation-name: currentProjectSlider2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+.backgroundSliderContainer3
+{
+
+    height: 100%;
+    width: 300%;
+    position: absolute;
+
+    display: flex;
+
+    animation-name: currentProjectSlider3;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+.backgroundSliderContainer4
+{
+
+    height: 100%;
+    width: 400%;
+    position: absolute;
+
+    display: flex;
+
+    animation-name: currentProjectSlider4;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+.sliderImg
+{
+    
+    width: 50%;
+    height: 100%;
+
+    overflow: hidden;
+    
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+@keyframes currentProjectSlider2 {
+    0% { left:0 }
+    30% { left:0 }
+    50% { left:-100%;}
+    80% { left:-100%;}
+    100% { left:0 }
+}
+@keyframes currentProjectSlider3 {
+
+    0% {left: 0;}
+	20% {left: 0;}
+	
+	25% {left: -100%;}
+	50% {left: -100%;}
+	
+	55% {left: -200%;}
+	80% {left: -200%;}
+    
+    100% {left: 0;}
+
+}
+@keyframes currentProjectSlider4 {
+
+    0% {left: 0;}
+	15% {left: 0;}
+	
+	20% {left: -100%;}
+	40% {left: -100%;}
+	
+	45% {left: -200%;}
+	65% {left: -200%;}
+	
+	70% {left: -300%;}
+    90% {left: -300%;}
+    
+    100% {left: 0;}
+
+}
+
+
+
+
+/* --------- Contact --------- */
+
+#boxContact{
+
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 3%;
+
+}
+
+#rrssContainer{
+
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.rrssImg{
+
+    width: 100px;
+    min-height: 100px;
+
+    margin-bottom: 3%;
+
+    background-size: cover;
+    background-position: center;
+
+}
+
+#linkedIn{
+
+    background-image: url("../media/RRSS/LinkedInWhite.png");
+
+}
+
+#gmail{
+
+    background-image: url("../media/RRSS/GmailWhite.png");
+
+}
+
+.infoRrss{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    align-items: center;
+
+}
+
+
+
+
+
+/* --------- RESPONSIVE --------- */
+
+/* Tablet */
+@media (min-width:768px) and (max-width:1025px){
+
+    .box, .content{
+
+        width: 100%;
+        margin-top: 2%;
+    
+    }
+
+    .imgContent{
+
+        min-height: 400px;
+
+    }
+
+    #buttonLanguage{
+
+        font-size: 1.5em;
+    
+    }
+
+}
+
+/* Phone */
+@media (max-width:767px){
+
+    .box, .content{
+
+        width: 100%;
+        margin-top: 2%;
+    
+    }
+
+    .imgContent{
+
+        min-height: 400px;
+        
+    }
+
+    #buttonLanguage{
+
+        font-size: 1.5em;
+    
+    }
+
+}
