@@ -343,8 +343,7 @@ html, body{
         justify-content: space-evenly;
         align-items: center;
         
-        margin-top: -14%;
-        margin-left: 20%;
+        min-height: 20vh;
     }
 
 
@@ -358,18 +357,18 @@ html, body{
 
     .flex_center_space {
         display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
         flex-direction: column;
     }
 
 
     .foto_about {
-        width: 50%;
+        width: 60%;
     }
 
     .text_about {
-        width: 80%;
+        width: 100%;
+        margin-top: 20%;
     }
 
 
@@ -433,7 +432,8 @@ html, body{
     }
 
     .social_media_home .icon_text {
-        scale: 0.8;
+        scale: 1;
+        margin-top: 0.7rem;
     }
 
 }
