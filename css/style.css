@@ -157,9 +157,9 @@ html, body{
 }
 
 
-.description_current {
+.description {
     
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 1rem;
     text-align: justify;
 
@@ -397,7 +397,7 @@ html, body{
         height: auto;
     }
 
-    .description_current {
+    .description {
         font-size: 0.9rem;
     }
 
